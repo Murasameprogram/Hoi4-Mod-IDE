@@ -1,6 +1,6 @@
 # Hearts of Iron IV Mod IDE (钢铁雄心4 Mod 集成开发环境)[待发布]
 
-![.NET Version](https://img.shields.io/badge/软件框架-.NET6.0-blue)
+![.NET Version](https://img.shields.io/badge/软件框架-.NET9.0-blue)
 ![UI](https://img.shields.io/badge/UI框架-WPFUI-blue)
 ![exe](https://img.shields.io/badge/开发用软件-VisualStudio-purple)
 ![Platform](https://img.shields.io/badge/运行环境-Windows10及以上-green)
@@ -62,7 +62,7 @@
 
 ## 📸 界面预览
 
-> ⚠️ 截图仅为示意，实际界面可能略有不同
+> ⚠️ 截图仅为示意，实际界面因软件版本问题可能略有不同
 
 | 项目管理器 | 新建 MOD 向导 | 民族精神编辑器 |
 |:---:|:---:|:---:|
@@ -81,13 +81,13 @@
 3. 运行 `Hearts of Iron IV Mod IDE.exe`。
 4. 首次启动将自动创建 `projects.json`，开始管理您的 MOD 项目。
 
-> **系统要求**：Windows 10/11（64位），已安装 [.NET 6.0 运行时](https://dotnet.microsoft.com/zh-cn/download/dotnet/6.0)（若未安装，程序启动时会提示下载）。
+> **系统要求**：Windows 10/11（64位），已安装 [.NET 9.0 运行时](https://dotnet.microsoft.com/zh-cn/download/dotnet/9.0)（若未安装，程序启动时会提示下载）。
 
 ### 从源码构建
 
 #### 开发环境要求
 - [Visual Studio](https://visualstudio.microsoft.com/)（建议使用Visual Studio2026，需包含“.NET 桌面开发”工作负载）
-- [.NET 6.0 SDK](https://dotnet.microsoft.com/zh-cn/download/dotnet/6.0)
+- [.NET 9.0 桌面运行时](https://dotnet.microsoft.com/zh-cn/download/dotnet/6.0)
 - Git
 
 #### 构建步骤
