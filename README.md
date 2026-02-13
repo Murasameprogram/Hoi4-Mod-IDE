@@ -85,7 +85,7 @@
 ### 从源码构建
 
 #### 开发环境要求
-- [Visual Studio 2022](https://visualstudio.microsoft.com/)（需包含“.NET 桌面开发”工作负载）
+- [Visual Studio(建议使用Visual Studio2026)](https://visualstudio.microsoft.com/)（需包含“.NET 桌面开发”工作负载）
 - [.NET 6.0 SDK](https://dotnet.microsoft.com/zh-cn/download/dotnet/6.0)
 - Git
 
