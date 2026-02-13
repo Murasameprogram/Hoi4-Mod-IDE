@@ -104,3 +104,93 @@ dotnet build -c Release
 
 # 运行
 dotnet run --project "Hearts of Iron IV Mod IDE.csproj"
+```
+或者直接用 Visual Studio 打开解决方案文件 `Hearts of Iron IV Mod IDE.sln`，按 F5 启动调试。
+
+## 使用指南
+
+- **创建新 MOD**：在项目管理器点击“新建 MOD”，填写表单，选择存储位置（推荐使用默认的 `文档/Paradox Interactive/Hearts of Iron IV/mod`），点击“创建”。
+
+- **导入现有 MOD**：点击“导入 MOD”，选择您的 `.mod` 文件，程序将自动识别并添加到列表。
+
+- **打开项目**：在项目列表中选中一个 MOD，点击“打开”，进入主工作区。
+
+- **开始编辑**：使用左侧导航栏选择对应的编辑器（目前民族精神编辑器正在完善中）。
+
+## 🛠️ 技术栈
+
+- **框架**：.NET 6.0 / WPF
+- **UI 库**：Wpf.Ui（提供现代化控件、导航、主题、消息提示、托盘图标）
+- **MVVM 框架**：CommunityToolkit.Mvvm（ObservableObject、RelayCommand、源生成器）
+- **依赖注入**：Microsoft.Extensions.DependencyInjection
+- **日志记录**：Microsoft.Extensions.Logging
+- **本地化**：WPFLocalizationExtension + 嵌入式资源文件（.resx + .ini）
+- **JSON 处理**：System.Text.Json
+- **文件操作**：System.IO
+
+## 🤝 贡献指南
+
+我们欢迎所有形式的贡献，包括但不限于：
+
+- 报告 Bug（通过 Issues）
+- 提出新功能建议
+- 提交代码修复或新功能（Pull Request）
+- 完善文档或翻译
+
+### 贡献流程
+
+1. Fork 本仓库
+2. 创建您的特性分支：`git checkout -b feature/AmazingFeature`
+3. 提交您的更改：`git commit -m 'Add some AmazingFeature'`
+4. 推送到分支：`git push origin feature/AmazingFeature`
+5. 打开一个 Pull Request
+
+### 开发规范
+
+- 保持现有的代码风格（使用 Rider 或 VS 默认格式化）
+- 提交前确保项目能正常编译
+- 若添加新功能，请同时更新相关文档
+- 对于较大的改动，建议先开启 Issue 进行讨论
+
+## 📄 许可证
+
+本项目采用 GNU General Public License v3.0 开源。  
+您可以在遵守 GPL v3 或更高版本的前提下自由使用、修改和分发本软件。
+
+完整许可证文本请参阅 `LICENSE` 文件或访问 [GNU 通用公共许可证 V3.0](https://www.gnu.org/licenses/gpl-3.0.html)。
+
+钢铁雄心4 Mod IDE Copyright © 2025 巴斯塔胡空间站<br>
+本程序是自由软件：您可以在遵守GNU GPL v3或更高版本的前提下再分发和/或修改它。
+本程序按"原样"提供，不附带任何担保。
+
+
+## 👥 开发团队
+
+- **Murasameprogram(丛雨绯闻男友)**  
+  [GitHub](https://github.com/Murasameprogram) <br>
+   核心开发、UI 设计、代码实现  
+
+- **Bstarhs(胡桃)**  
+  [GitHub](https://github.com/bstarhs) | [Bilibili](https://space.bilibili.com/545733083) <br>
+  多语言支持，翻译、校对
+
+## 🌟 致谢
+
+感谢所有《钢铁雄心4》模组社区的玩家和开发者提供的宝贵反馈。
+感谢 Wpf.Ui 团队提供的现代化 UI 控件库，让项目界面更加美观。
+感谢 Paradox Interactive 为我们带来如此出色的游戏，激发创作灵感。
+
+## 📬 联系我们
+
+- 如您需要更多的语言支持，请与我们联系
+- 问题反馈：GitHub Issues
+- 教程与公告：B站 [@Bstarhs](https://space.bilibili.com/545733083)
+- 用户协议 & 隐私政策：在软件“关于”页面可查看多语言版本
+
+如果您喜欢这个项目，请给一个 ⭐️ 支持我们！
+
+2025年2月13日<br>
+巴斯塔胡空间站
+
+---
+[软件更新日志](docs/rizi.txt)
