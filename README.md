@@ -1,4 +1,4 @@
-# Hearts of Iron IV Mod IDE (钢铁雄心4 Mod 集成开发环境)
+# Hearts of Iron IV Mod IDE (钢铁雄心4 Mod 集成开发环境)[待发布]
 
 ![.NET Version](https://img.shields.io/badge/软件框架-.NET6.0-blue)
 ![UI](https://img.shields.io/badge/UI框架-WPFUI-blue)
