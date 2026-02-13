@@ -176,9 +176,9 @@ dotnet run --project "Hearts of Iron IV Mod IDE.csproj"
 
 ## 🌟 致谢
 
-感谢所有《钢铁雄心4》模组社区的玩家和开发者提供的宝贵反馈。
-感谢 Wpf.Ui 团队提供的现代化 UI 控件库，让项目界面更加美观。
-感谢 Paradox Interactive 为我们带来如此出色的游戏，激发创作灵感。
+- 感谢所有《钢铁雄心4》模组社区的玩家和开发者提供的宝贵反馈
+- 感谢 Wpf.Ui 团队提供的现代化 UI 控件库，让项目界面更加美观
+- 感谢 Paradox Interactive 为我们带来如此出色的游戏，激发创作灵感
 
 ## 📬 联系我们
 
