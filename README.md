@@ -193,4 +193,4 @@ dotnet run --project "Hearts of Iron IV Mod IDE.csproj"
 巴斯塔胡空间站
 
 ---
-[软件更新日志](docs/rizi.txt)
+[软件更新日志](doc/Log.md)
