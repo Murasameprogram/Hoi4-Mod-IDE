@@ -64,11 +64,13 @@
 
 > ⚠️ 截图仅为示意，实际界面因软件版本问题可能略有不同
 
-| 项目管理器 | 新建 MOD 向导 | 民族精神编辑器 |
-|:---:|:---:|:---:|
-| ![项目管理器](Picture/项目管理器.png) | ![新建MOD(占位)](docs/screenshots/new_mod.png) | ![民族精神编辑器(占位)](docs/screenshots/national_spirit.png) |
-| 主窗口 | 关于页面 | 设置页面 |
-| ![主窗口(占位)](docs/screenshots/main_window.png) | ![关于(占位)](docs/screenshots/about.png) | ![设置(占位)](docs/screenshots/settings.png) |
+| 项目管理器 | 新建 MOD 向导|
+|:---:|:---:|
+| ![项目管理器](Picture/项目管理器.png) | ![新建MOD](Picture/新建MOD向导.png) |
+| 主窗口 | 民族精神编辑器 |
+| ![主窗口(占位)](docs/screenshots/main_window.png) | ![民族精神编辑器(占位)](docs/screenshots/national_spirit.png) |
+| 关于页面 | 设置页面 |
+| ![关于(占位)](Picture/关于.png) | ![设置(占位)](Picture/设置.png) |
 
 ---
 
