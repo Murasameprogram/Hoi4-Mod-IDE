@@ -6,6 +6,7 @@
   </h1>
 </div>
 
+[English](./Docs/English.md) | [中文](./README.md)| [繁体中文](./Docs/zh-TW.md)  
 ![.NET Version](https://img.shields.io/badge/软件框架-.NET9.0-blue)
 ![UI](https://img.shields.io/badge/UI框架-WPFUI-blue)
 ![exe](https://img.shields.io/badge/开发用软件-VisualStudio-purple)
@@ -197,7 +198,7 @@ dotnet run --project "Hearts of Iron IV Mod IDE.csproj"
 
 如果您喜欢这个项目，请给一个 ⭐️ 支持我们！
 
-2025年2月13日<br>
+2025年2月14日<br>
 巴斯塔胡空间站
 
 ---
