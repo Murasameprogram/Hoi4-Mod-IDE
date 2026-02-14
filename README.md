@@ -66,7 +66,7 @@
 
 | 项目管理器 | 新建 MOD 向导|
 |:---:|:---:|
-| ![项目管理器](Picture/项目管理器.png) | ![新建MOD](Picture/新建MOD向导.png) |
+| ![项目管理器](Picture/项目管理器.png) | ![新建MOD](Picture/新建mod向导.png) |
 | 主窗口 | 民族精神编辑器 |
 | ![主窗口(占位)](docs/screenshots/main_window.png) | ![民族精神编辑器(占位)](docs/screenshots/national_spirit.png) |
 | 关于页面 | 设置页面 |
