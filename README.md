@@ -70,7 +70,7 @@
 | 主窗口 | 民族精神编辑器 |
 | ![主窗口(占位)](docs/screenshots/main_window.png) | ![民族精神编辑器(占位)](docs/screenshots/national_spirit.png) |
 | 关于页面 | 设置页面 |
-| ![关于(占位)](Picture/关于.png) | ![设置(占位)](Picture/设置.png) |
+| ![关于](Picture/关于.png) | ![设置](Picture/设置.png) |
 
 ---
 
