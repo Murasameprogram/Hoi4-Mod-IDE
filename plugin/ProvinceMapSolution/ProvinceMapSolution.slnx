@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="ProvinceMapLibrary/ProvinceMapLibrary.csproj" />
+  <Project Path="ProvinceMapTester/ProvinceMapTester.csproj" />
+</Solution>

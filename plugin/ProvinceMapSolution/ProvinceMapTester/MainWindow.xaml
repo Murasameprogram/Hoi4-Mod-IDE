@@ -1,0 +1,19 @@
+﻿<Window x:Class="ProvinceMapTester.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:controls="clr-namespace:ProvinceMapLibrary.Controls;assembly=ProvinceMapLibrary"
+        Title="测试 ProvinceMapViewer 控件" Height="600" Width="900"
+        WindowStartupLocation="CenterScreen">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" Text="省份地图解析器测试" FontSize="16" FontWeight="Bold" Margin="0,0,0,10"/>
+
+        <controls:ProvinceMapViewer x:Name="MapViewer" Grid.Row="1"
+                                     FilePath="{Binding FilePath, Mode=TwoWay}"
+                                     SelectedColor="{Binding SelectedColor, Mode=TwoWay}"/>
+    </Grid>
+</Window>
