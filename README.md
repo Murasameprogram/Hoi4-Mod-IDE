@@ -208,6 +208,7 @@ dotnet run --project "Hearts of Iron IV Mod IDE.csproj"
 - 如您需要更多的语言支持，请与我们联系
 - 问题反馈：GitHub Issues
 - 教程与公告：B站 [@Bstarhs](https://space.bilibili.com/545733083)
+- QQ群：950718988（**仅可通过群号搜索**）
 - 用户协议 & 隐私政策：在软件“关于”页面可查看多语言版本
 
 如果您喜欢这个项目，请给一个 ⭐️ 支持我们！
