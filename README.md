@@ -6,28 +6,33 @@
   </h1>
 </div>
 
-[English](./Docs/English.md) | [中文](./README.md)| [繁体中文](./Docs/zh-TW.md)  
-![.NET Version](https://img.shields.io/badge/软件框架-.NET9.0-blue)
+[English](./Docs/English.md) | [中文](./README.md) | [繁体中文](./Docs/zh-TW.md)  
+![.NET Version](https://img.shields.io/badge/框架-.NET%209.0-blue)
 ![UI](https://img.shields.io/badge/UI框架-WPFUI-blue)
-![exe](https://img.shields.io/badge/开发用软件-VisualStudio-purple)
-![Platform](https://img.shields.io/badge/运行环境-Windows10及以上-green)
+![IDE](https://img.shields.io/badge/开发工具-Visual%20Studio%202022-purple)
+![Platform](https://img.shields.io/badge/平台-Windows%2010%2F11-green)
 
 > **《钢铁雄心4》模组开发者的全能工具箱**  
-> 告别手动创建文件夹和编辑文本文件，通过图形化界面轻松管理、创建和编辑 HOI4 模组。从项目初始化到游戏机制配置，一站式提升模组制作效率。
+> 告别手动创建文件夹和编辑文本文件，通过图形化界面轻松管理、创建和编辑 HOI4 模组。从项目初始化到游戏机制配置，再到代码优化与插件扩展，一站式提升模组制作效率。
 
 ---
 
 ## 📋 项目状态
 
-**当前版本：v0.0.1-bete.1**  
-该测试版本已开发下载，当前版本仅仅只是一个无插件的框架，如需编辑mod需等待插件发布
+**当前版本：v0.0.2-beta**  
+本次更新带来了插件系统、代码编辑器以及模组优化工具，大幅扩展了 IDE 的能力边界。
 
 - ✅ 项目管理器（新建/导入/删除/持久化）
 - ✅ 新建 MOD 向导（自动生成标准目录结构）
 - ✅ 主窗口框架（导航、主题切换、托盘图标）
-- 🚧 多语言支持（内置 8 种语言）[已完成开发，测试中]
-- 🚧 民族精神编辑器（UI 完成，逻辑开发中）
-- 🚧 事件/国策/决议编辑器（规划中）
+- ✅ 多语言支持（内置 8 种语言）
+- ✅ 民族精神编辑器（完整功能：配置属性、条件、修饰符、本地化、获取方式）
+- ✅ 插件系统（提供完整开发文档，支持第三方扩展）
+- ✅ 代码编辑器（为熟练开发者提供直接代码编辑与语法修正）
+- ✅ MOD 优化工具（扫描模组文件，找出冗余代码/文件）
+- 🚧 事件编辑器（规划中）
+- 🚧 国策/决议编辑器（规划中）
+- 🚧 单位统计编辑器（规划中）
 
 项目处于积极开发阶段，欢迎反馈和建议！
 
@@ -46,9 +51,16 @@
 - 自动生成符合 HOI4 规范的目录结构：
 - 自动创建示例文件：国家标签、本地化、缩略图占位
 
-### 🎨 可视化编辑器（开发中）
+### 🎨 可视化编辑器
 - **民族精神编辑器**：配置精神属性、生效条件、修饰符效果、本地化文本、获取方式（开局/国策/事件）
-- 计划支持：事件编辑器、国策编辑器、决议编辑器、单位统计编辑器
+- **代码编辑器**：内嵌代码高亮与实时语法检查，支持直接编辑模组脚本，并提供一键修正常见错误的功能
+- **MOD 优化工具**：智能扫描模组文件，识别重复、未引用或废弃的代码块与文件，帮助精简模组体积，提升加载速度
+- *计划支持：事件编辑器、国策编辑器、决议编辑器、单位统计编辑器*
+
+### 🧩 插件系统
+- 提供完善的[插件开发文档](./doc/Plugin%20Development%20Guide/插件开发指南.md)，开发者可自由扩展 IDE 功能
+- 插件可注册新的编辑器、工具窗口、菜单项，并与核心服务交互
+- 社区插件商店（规划中）将允许一键安装他人共享的插件
 
 ### 🖥️ 现代化工作区
 - 基于 `Wpf.Ui` 的流畅界面，支持亮色/暗色主题一键切换
@@ -69,9 +81,9 @@
 
 ## 📸 界面预览
 
-> ⚠️ 截图仅为示意，实际界面因软件版本问题可能略有不同
+> ⚠️ 截图仅为示意，实际界面可能因软件版本不同而略有差异
 
-| 项目管理器 | 新建 MOD 向导|
+| 项目管理器 | 新建 MOD 向导 |
 |:---:|:---:|
 | ![项目管理器](Picture/项目管理器.png) | ![新建MOD](Picture/新建mod向导.png) |
 | 主窗口 | 民族精神编辑器 |
@@ -95,8 +107,8 @@
 ### 从源码构建
 
 #### 开发环境要求
-- [Visual Studio](https://visualstudio.microsoft.com/)（建议使用Visual Studio2026，需包含“.NET 桌面开发”工作负载）
-- [.NET 9.0 桌面运行时](https://dotnet.microsoft.com/zh-cn/download/dotnet/6.0)
+- [Visual Studio 2022](https://visualstudio.microsoft.com/)（需包含“.NET 桌面开发”工作负载）
+- [.NET 9.0 SDK](https://dotnet.microsoft.com/zh-cn/download/dotnet/9.0)
 - Git
 
 #### 构建步骤
@@ -124,11 +136,13 @@ dotnet run --project "Hearts of Iron IV Mod IDE.csproj"
 
 - **打开项目**：在项目列表中选中一个 MOD，点击“打开”，进入主工作区。
 
-- **开始编辑**：使用左侧导航栏选择对应的编辑器（目前民族精神编辑器正在完善中）。
+- **开始编辑**：使用左侧导航栏选择对应的编辑器（民族精神编辑器已完善；代码编辑器可直接修改脚本；优化工具可一键扫描冗余）。
+
+- **安装插件**：将插件 `.dll` 放入 `Plugins` 文件夹，重启 IDE 即可自动加载（插件开发请参考[插件开发指南](./doc/Plugin%20Development%20Guide/插件开发指南.md)）。
 
 ## 🛠️ 技术栈
 
-- **框架**：.NET 6.0 / WPF
+- **框架**：.NET 9.0 / WPF
 - **UI 库**：Wpf.Ui（提供现代化控件、导航、主题、消息提示、托盘图标）
 - **MVVM 框架**：CommunityToolkit.Mvvm（ObservableObject、RelayCommand、源生成器）
 - **依赖注入**：Microsoft.Extensions.DependencyInjection
@@ -145,6 +159,7 @@ dotnet run --project "Hearts of Iron IV Mod IDE.csproj"
 - 提出新功能建议
 - 提交代码修复或新功能（Pull Request）
 - 完善文档或翻译
+- 开发插件并分享
 
 ### 贡献流程
 
@@ -168,18 +183,17 @@ dotnet run --project "Hearts of Iron IV Mod IDE.csproj"
 
 完整许可证文本请参阅 `LICENSE` 文件或访问 [GNU 通用公共许可证 V3.0](https://www.gnu.org/licenses/gpl-3.0.html)。
 
-钢铁雄心4 Mod IDE Copyright © 2025 巴斯塔胡空间站<br>
+钢铁雄心4 Mod IDE Copyright © 2025-2026 巴斯塔胡空间站<br>
 本程序是自由软件：您可以在遵守GNU GPL v3或更高版本的前提下再分发和/或修改它。
 本程序按"原样"提供，不附带任何担保。
 
-
 ## 👥 开发团队
 
-- **Murasameprogram(丛雨绯闻男友)**  
+- **Murasameprogram（丛雨绯闻男友）**  
   [GitHub](https://github.com/Murasameprogram) <br>
-   核心开发、UI 设计、代码实现  
+  核心开发、UI 设计、代码实现  
 
-- **Bstarhs(胡桃)**  
+- **Bstarhs（胡桃）**  
   [GitHub](https://github.com/bstarhs) | [Bilibili](https://space.bilibili.com/545733083) <br>
   多语言支持，翻译、校对
 
@@ -198,8 +212,8 @@ dotnet run --project "Hearts of Iron IV Mod IDE.csproj"
 
 如果您喜欢这个项目，请给一个 ⭐️ 支持我们！
 
-2025年2月14日<br>
+2026年3月2日<br>
 巴斯塔胡空间站
 
 ---
-[软件更新日志](doc/Log.md)  [插件编写指南](doc/Plugin%20Development%20Guide/插件开发指南.md) 
+[软件更新日志](./doc/Log.md) · [插件开发指南](./doc/Plugin%20Development%20Guide/插件开发指南.md)
