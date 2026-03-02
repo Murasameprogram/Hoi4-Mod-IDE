@@ -202,4 +202,4 @@ dotnet run --project "Hearts of Iron IV Mod IDE.csproj"
 巴斯塔胡空间站
 
 ---
-[软件更新日志](doc/Log.md)
+[软件更新日志](doc/Log.md)  [软件更新日志](doc/Plugin%20Development%20Guide/插件开发指南.md) 
