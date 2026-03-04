@@ -9,7 +9,7 @@
 [English](./Docs/English.md) | [中文](./README.md) | [繁体中文](./Docs/zh-TW.md)  
 ![.NET Version](https://img.shields.io/badge/框架-.NET%209.0-blue)
 ![UI](https://img.shields.io/badge/UI框架-WPFUI-blue)
-![IDE](https://img.shields.io/badge/开发工具-Visual%20Studio%202022-purple)
+![IDE](https://img.shields.io/badge/开发工具-Visual%20Studio%202026-purple)
 ![Platform](https://img.shields.io/badge/平台-Windows%2010%2F11-green)
 
 > **《钢铁雄心4》模组开发者的全能工具箱**  
