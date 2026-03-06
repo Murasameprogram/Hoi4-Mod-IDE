@@ -192,7 +192,7 @@ dotnet run --project "Hearts of Iron IV Mod IDE.csproj"
 本程序是自由软件：您可以在遵守GNU GPL v3或更高版本的前提下再分发和/或修改它。
 本程序按"原样"提供，不附带任何担保。
 
-## 👥 开发团队
+## 👥 开发团队(千月堂)
 
 - **Murasameprogram（丛雨绯闻男友）**  
   [GitHub](https://github.com/Murasameprogram) <br>
