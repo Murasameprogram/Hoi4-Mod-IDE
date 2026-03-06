@@ -1,3 +1,9 @@
+# 修改后的 README.md
+
+在“🧩 插件系统”小节下方，增加对通信机制的简要说明。修改后内容如下：
+
+---
+
 <div align="center">
   <h1 align="center">
     <a><img src="https://github.com/Murasameprogram/Hoi4-Mod-IDE/blob/main/Picture/ico.png" width="250"></a>
@@ -10,7 +16,7 @@
 ![.NET Version](https://img.shields.io/badge/框架-.NET%209.0-blue)
 ![UI](https://img.shields.io/badge/UI框架-WPFUI-blue)
 ![IDE](https://img.shields.io/badge/开发工具-Visual%20Studio%202026-purple)
-![Platform](https://img.shields.io/badge/平台-Windows%2010%2F11-green)
+![Platform](https://img.shields.io/badge/平台-Windows%2010%2F11%20x64-green)
 
 > **《钢铁雄心4》模组开发者的全能工具箱**  
 > 告别手动创建文件夹和编辑文本文件，通过图形化界面轻松管理、创建和编辑 HOI4 模组。从项目初始化到游戏机制配置，再到代码优化与插件扩展，一站式提升模组制作效率。
@@ -59,8 +65,13 @@
 
 ### 🧩 插件系统
 - 提供完善的[插件开发文档](./doc/Plugin%20Development%20Guide/插件开发指南.md)，开发者可自由扩展 IDE 功能
-- 插件可注册新的编辑器、工具窗口、菜单项，并与核心服务交互
-- 社区插件商店（规划中）将允许一键安装他人共享的插件
+- 插件与主程序之间通过**基于 JSON 的消息机制**进行通信，所有交互均经过主程序路由，确保类型隔离与安全性
+- 插件可**请求主程序服务**（如获取当前项目信息、记录日志、导航到页面、打开窗口、读写配置等）
+- 插件之间也能**相互调用**：通过服务注册与发现机制，一个插件可注册解析服务（如国策文本解析），供其他插件调用，实现功能复用
+- 插件携带两个通信库：
+  - `HostComms.dll`：处理与主程序的底层通信
+  - `PluginComms.dll`：封装插件间协作的高级 API（服务调用、直接消息、广播）
+- 未来将支持**社区插件商店**，一键安装他人共享的插件
 
 ### 🖥️ 现代化工作区
 - 基于 `Wpf.Ui` 的流畅界面，支持亮色/暗色主题一键切换
@@ -213,7 +224,7 @@ dotnet run --project "Hearts of Iron IV Mod IDE.csproj"
 
 如果您喜欢这个项目，请给一个 ⭐️ 支持我们！
 
-2026年3月2日<br>
+2026年3月6日<br>
 巴斯塔胡空间站
 
 ---
