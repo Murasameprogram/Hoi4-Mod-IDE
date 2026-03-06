@@ -1,9 +1,3 @@
-# 修改后的 README.md
-
-在“🧩 插件系统”小节下方，增加对通信机制的简要说明。修改后内容如下：
-
----
-
 <div align="center">
   <h1 align="center">
     <a><img src="https://github.com/Murasameprogram/Hoi4-Mod-IDE/blob/main/Picture/ico.png" width="250"></a>
