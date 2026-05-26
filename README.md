@@ -287,7 +287,7 @@ dotnet new qyt-plugin -G HOI4 -N "MyPlugin"
 ## 🛠️ 技术栈
 
 ### 核心框架
-- **框架**：.NET 10 / WPF（原生控件，非 WPF-UI）
+- **框架**：.NET 10 / WPF-UI 
 - **MVVM 框架**：CommunityToolkit.Mvvm（ObservableObject、RelayCommand、源生成器）
 - **依赖注入**：Microsoft.Extensions.DependencyInjection
 - **JSON 处理**：System.Text.Json
