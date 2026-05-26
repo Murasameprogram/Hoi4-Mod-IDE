@@ -2,14 +2,14 @@
   <h1 align="center">
     <a><img src="https://github.com/Murasameprogram/Hoi4-Mod-IDE/blob/main/Picture/ico.png" width="250"></a>
     <br/>
-    <a>Paradox 游戏 MOD 集成开发环境</a>
+    <a>千月堂·MOD IDE</a>
   </h1>
 </div>
 
 [English](./Docs/English.md) | [中文](./README.md) | [繁体中文](./Docs/zh-TW.md")  
-![.NET Version](https://img.shields.io/badge/框架-.NET%209.0-blue)
-![UI](https://img.shields.io/badge/UI框架-WPFUI-blue)
-![IDE](https://img.shields.io/badge/开发工具-Visual%20Studio%202022-purple)
+![.NET Version](https://img.shields.io/badge/框架-.NET%2010-blue)
+![UI](https://img.shields.io/badge/UI框架-WPF-blue)
+![IDE](https://img.shields.io/badge/开发工具-Visual%20Studio%202026-purple)
 ![Platform](https://img.shields.io/badge/平台-Windows%2010%2F11%20x64-green)
 
 > **Paradox 游戏模组开发者的全能工具箱**
@@ -20,19 +20,23 @@
 ## 📋 项目状态
 
 **已发行版本：v0.0.1-beta**<br>
-**当前版本：v0.0.3-beta(未发行)**  
-本次更新带来了**多游戏支持**，从原先仅支持 HOI4 扩展为支持大部分 Paradox 游戏，包括 HOI4、EU4、CK3、VIC3、Stellaris 等。
+**当前版本：v0.1.0-alpha(未发行)**  
+本次更新带来了**框架大版本升级**，从 .NET 9.0 + WPF-UI 迁移至 **.NET 10 + WPF**，软件名称正式更改为**千月堂·MOD IDE**。
+
+⚠️ **重要说明**：由于框架全面升级，之前版本实现的所有编辑器均已失效，需要重新制作。
 
 - ✅ 项目管理器（新建/导入/删除/持久化）
 - ✅ 新建 MOD 向导（自动生成标准目录结构）
 - ✅ 主窗口框架（导航、主题切换、托盘图标）
-- ✅ 插件系统（提供完整开发文档，支持第三方扩展）
-- ✅ **多游戏支持**（支持 HOI4、EU4、CK3、VIC3、Stellaris 等 Paradox 游戏）
-- 🚧 代码编辑器（为熟练开发者提供直接代码编辑与语法修正）
-- 🚧 MOD 优化工具（扫描模组文件，找出冗余代码/文件）
-- 🚧 事件编辑器（规划中）
-- 🚧 国策/决议编辑器（规划中）
-- 🚧 单位统计编辑器（规划中）
+- ✅ 多语言支持（内置 8 种语言）
+- 🚧 **编辑器重构中**（因框架升级，所有编辑器需重新制作）
+  - 🚧 民族精神编辑器（重构中）
+  - 🚧 代码编辑器（规划中）
+  - 🚧 MOD 优化工具（规划中）
+  - 🚧 事件编辑器（规划中）
+  - 🚧 国策/决议编辑器（规划中）
+  - 🚧 单位统计编辑器（规划中）
+- 🚧 插件系统（适配 .NET 10 中）
 
 项目处于积极开发阶段，欢迎反馈和建议！
 
@@ -40,11 +44,16 @@
 
 ## ⚠️ 重要提示
 
-由于软件已从**仅支持 HOI4** 扩展为**支持多款 Paradox 游戏**，原有的插件、教程等内容可能已失效。请注意：
+由于软件进行了**框架大版本升级**（.NET 9.0 → .NET 10，WPF-UI → WPF），以下内容已失效：
 
-- 🔄 **插件兼容性**：为旧版 HOI4-Mod-IDE 开发的插件可能需要重新适配
-- 📚 **教程更新**：官方教程正在重新编写中，请及时关注更新
-- 🛠️ **API 变更**：插件开发接口可能有所调整，请参考最新的[插件开发指南](./doc/Plugin%20Development%20Guide/插件开发指南.md)
+- ❌ **所有旧版编辑器**：民族精神编辑器、代码编辑器等均需重新制作
+- ❌ **旧版插件**：为旧框架开发的插件已完全不兼容
+- ❌ **旧版教程**：所有教程和文档需要重新编写
+- 🔄 **插件开发接口**：插件 API 已重新设计，请参考最新的[插件开发指南](./doc/Plugin%20Development%20Guide/插件开发指南.md)
+
+**迁移建议**：
+- 如需使用稳定版本，请继续使用 v0.0.1-beta（仅支持 HOI4）
+- 新版 v0.1.0-alpha 正在重构中，编辑器功能将逐步恢复
 
 ---
 
@@ -63,27 +72,33 @@
 - 自动生成符合对应游戏规范的目录结构
 - 自动创建示例文件：国家标签、本地化、缩略图占位
 
-### 🎨 可视化编辑器
+### 🎨 可视化编辑器（重构中）
+
+> ⚠️ **注意**：由于框架升级至 .NET 10，所有编辑器正在重新制作中。
+
 - **游戏机制编辑器**：针对不同游戏提供专用的可视化编辑功能
-  - HOI4：民族精神编辑器（配置属性、条件、修饰符、本地化、获取方式）
-  - EU4/CK3/VIC3/Stellaris：对应游戏的专用编辑器（开发中）
-- **代码编辑器**：内嵌代码高亮与实时语法检查，支持直接编辑模组脚本，并提供一键修正常见错误的功能
-- **MOD 优化工具**：智能扫描模组文件，识别重复、未引用或废弃的代码块与文件，帮助精简模组体积，提升加载速度
+  - HOI4：民族精神编辑器（重构中）
+  - EU4/CK3/VIC3/Stellaris：对应游戏的专用编辑器（规划中）
+- **代码编辑器**：内嵌代码高亮与实时语法检查（规划中）
+- **MOD 优化工具**：智能扫描模组文件（规划中）
 - *计划支持：事件编辑器、国策编辑器、决议编辑器、单位统计编辑器*
 
-### 🧩 插件系统
+### 🧩 插件系统（适配中）
+
+> ⚠️ **注意**：插件系统正在适配 .NET 10 框架，API 可能有较大变化。
+
 - 提供完善的[插件开发文档](./doc/Plugin%20Development%20Guide/插件开发指南.md)，开发者可自由扩展 IDE 功能
-- 插件与主程序之间通过**基于 JSON 的消息机制**进行通信，所有交互均经过主程序路由，确保类型隔离与安全性
-- 插件可**请求主程序服务**（如获取当前项目信息、记录日志、导航到页面、打开窗口、读写配置等）
-- 插件之间也能**相互调用**：通过服务注册与发现机制，一个插件可注册解析服务（如国策文本解析），供其他插件调用，实现功能复用
+- 插件与主程序之间通过**基于 JSON 的消息机制**进行通信
+- 插件可**请求主程序服务**（获取当前项目信息、记录日志、导航到页面等）
+- 插件之间也能**相互调用**：通过服务注册与发现机制
 - 插件携带两个通信库：
   - `HostComms.dll`：处理与主程序的底层通信
-  - `PluginComms.dll`：封装插件间协作的高级 API（服务调用、直接消息、广播）
-- **多游戏支持**：插件可声明支持的游戏类型，主程序会自动过滤不适用的插件
+  - `PluginComms.dll`：封装插件间协作的高级 API
+- **多游戏支持**：插件可声明支持的游戏类型
 - 未来将支持**社区插件商店**，一键安装他人共享的插件
 
 ### 🖥️ 现代化工作区
-- 基于 `Wpf.Ui` 的流畅界面，支持亮色/暗色主题一键切换
+- 基于 **WPF** 的流畅界面，支持亮色/暗色主题一键切换
 - 动态标题栏显示当前打开的 MOD 名称和 ID
 - 系统托盘图标，支持最小化到后台运行
 - 内置导航菜单，快速切换不同编辑器
@@ -102,15 +117,19 @@
 
 ## 📸 界面预览
 
+> ⚠️ **重要提醒**：由于软件进行了框架大版本升级（.NET 10 + WPF），界面可能已发生变化。以下截图可能为旧版界面，仅供参考。
+
 > ⚠️ 截图仅为示意，实际界面可能因软件版本不同而略有差异
 
 | 项目管理器 | 新建 MOD 向导 |
 |:---:|:---:|
 | ![项目管理器](Picture/项目管理器.png) | ![新建MOD](Picture/新建mod向导.png) |
-| 主窗口 | 民族精神编辑器 |
-| ![主窗口(占位)](Picture/主窗口.png) | ![民族精神编辑器(占位)](Picture/民族精神编辑器.png) |
+| 主窗口 | 编辑器（重构中） |
+| ![主窗口(占位)](Picture/主窗口.png) | ![编辑器(占位)](Picture/编辑器.png) |
 | 关于页面 | 设置页面 |
 | ![关于](Picture/关于.png) | ![设置](Picture/设置.png) |
+
+> 💡 **获取最新界面**：请从 [Releases 页面](https://github.com/Murasameprogram/Hoi4-Mod-IDE/releases) 下载最新版本查看实际界面。
 
 ---
 
@@ -118,20 +137,22 @@
 
 ### 安装（使用预编译版本）
 
-1. 前往 [Releases 页面](https://github.com/Murasameprogram/Hoi4-Mod-IDE/releases) 下载最新版本的 `Paradox-Mod-IDE.zip`。
-2. 解压到任意文件夹（例如 `C:\Program Files\Paradox Mod IDE`）。
-3. 运行 `Paradox Mod IDE.exe`。
+1. 前往 [Releases 页面](https://github.com/Murasameprogram/Hoi4-Mod-IDE/releases) 下载最新版本的 `千月堂·MOD-IDE.zip`。
+2. 解压到任意文件夹（例如 `C:\Program Files\千月堂·MOD IDE`）。
+3. 运行 `千月堂·MOD IDE.exe`。
 4. 首次启动将自动创建 `projects.json`，开始管理您的 MOD 项目。
 
-> **系统要求**：Windows 10/11（64位），已安装 [.NET 9.0 运行时](https://dotnet.microsoft.com/zh-cn/download/dotnet/9.0)（若未安装，程序启动时会提示下载）。
+> **系统要求**：Windows 10/11（64位），已安装 [.NET 10.0 运行时](https://dotnet.microsoft.com/zh-cn/download/dotnet/10.0)（若未安装，程序启动时会提示下载）。
 
 > **支持的游戏**：HOI4、EU4、CK3、VIC3、Stellaris 等 Paradox Interactive 游戏。
+
+> ⚠️ **注意**：当前版本为 alpha 测试版，编辑器功能正在重构中，建议使用稳定版 v0.0.1-beta 进行生产环境 MOD 开发。
 
 ### 从源码构建
 
 #### 开发环境要求
-- [Visual Studio 2022](https://visualstudio.microsoft.com/)（需包含".NET 桌面开发"工作负载）
-- [.NET 9.0 SDK](https://dotnet.microsoft.com/zh-cn/download/dotnet/9.0)
+- [Visual Studio 2026](https://visualstudio.microsoft.com/)（需包含".NET 桌面开发"工作负载）
+- [.NET 10.0 SDK](https://dotnet.microsoft.com/zh-cn/download/dotnet/10.0)
 - Git
 
 #### 构建步骤
@@ -147,11 +168,13 @@ dotnet restore
 dotnet build -c Release
 
 # 运行
-dotnet run --project "Paradox Mod IDE.csproj"
+dotnet run --project "千月堂·MOD IDE.csproj"
 ```
-或者直接用 Visual Studio 打开解决方案文件 `Paradox Mod IDE.sln`，按 F5 启动调试。
+或者直接用 Visual Studio 打开解决方案文件 `千月堂·MOD IDE.sln`，按 F5 启动调试。
 
 ## 使用指南
+
+> ⚠️ **注意**：当前版本 v0.1.0-alpha 为框架大改后的重构版本，编辑器功能正在逐步恢复中。
 
 - **选择目标游戏**：启动 IDE 后，首先在设置中选择您要开发的 MOD 对应的 Paradox 游戏（HOI4、EU4、CK3、VIC3、Stellaris 等）。
 
@@ -161,26 +184,32 @@ dotnet run --project "Paradox Mod IDE.csproj"
 
 - **打开项目**：在项目列表中选中一个 MOD，点击"打开"，进入主工作区。
 
-- **开始编辑**：使用左侧导航栏选择对应的编辑器（民族精神编辑器已完善；代码编辑器可直接修改脚本；优化工具可一键扫描冗余）。
+- **开始编辑**：
+  > ⚠️ 由于框架升级，编辑器正在重新制作中，当前版本可能功能不完整。
 
-- **安装插件**：将插件 `.dll` 放入 `Plugins` 文件夹，重启 IDE 即可自动加载（插件开发请参考[插件开发指南](./doc/Plugin%20Development%20Guide/插件开发指南.md)）。
+  使用左侧导航栏选择对应的编辑器（编辑器重构完成后将恢复完整功能）。
 
-### 🎮 各游戏专用功能
+- **安装插件**：
+  > ⚠️ 插件系统正在适配 .NET 10 框架，旧版插件不兼容。
 
-| 游戏 | 支持的功能 |
+  将插件 `.dll` 放入 `Plugins` 文件夹，重启 IDE 即可自动加载（插件开发请参考[插件开发指南](./doc/Plugin%20Development%20Guide/插件开发指南.md)）。
+
+### 🎮 各游戏专用功能（规划中）
+
+| 游戏 | 支持的功能（规划中） |
 |:---|:---|
-| **HOI4** | 民族精神编辑器、事件编辑器（规划中）、国策编辑器（规划中） |
+| **HOI4** | 民族精神编辑器（重构中）、事件编辑器（规划中）、国策编辑器（规划中） |
 | **EU4** | 事件编辑器（规划中）、决议编辑器（规划中） |
 | **CK3** | 事件编辑器（规划中）、决议编辑器（规划中） |
 | **VIC3** | 事件编辑器（规划中）、经济编辑器（规划中） |
 | **Stellaris** | 事件编辑器（规划中）、物种编辑器（规划中） |
 
-> **注意**：部分功能仍在开发中，具体支持情况请参考[项目状态](#-项目状态)。
+> **注意**：功能恢复进度请参考[项目状态](#-项目状态)。当前建议使用稳定版 v0.0.1-beta 进行 MOD 开发。
 
 ## 🛠️ 技术栈
 
-- **框架**：.NET 10.0 / WPF
-- **UI 库**：Wpf.Ui（提供现代化控件、导航、主题、消息提示、托盘图标）
+- **框架**：.NET 10 / WPF
+- **UI 库**：WPF 原生控件（迁移自 Wpf.Ui）
 - **MVVM 框架**：CommunityToolkit.Mvvm（ObservableObject、RelayCommand、源生成器）
 - **依赖注入**：Microsoft.Extensions.DependencyInjection
 - **日志记录**：Microsoft.Extensions.Logging
@@ -221,7 +250,7 @@ dotnet run --project "Paradox Mod IDE.csproj"
 
 完整许可证文本请参阅 `LICENSE` 文件或访问 [GNU 通用公共许可证 V3.0](https://www.gnu.org/licenses/gpl-3.0.html)。
 
-Paradox Mod IDE Copyright © 2025-2026 巴斯塔胡空间站<br>
+千月堂·MOD IDE Copyright © 2025-2026 千月堂<br>
 本程序是自由软件：您可以在遵守GNU GPL v3或更高版本的前提下再分发和/或修改它。
 本程序按"原样"提供，不附带任何担保。
 
@@ -250,10 +279,13 @@ Paradox Mod IDE Copyright © 2025-2026 巴斯塔胡空间站<br>
 - QQ群：950718988（**仅可通过群号搜索**）
 - 用户协议 & 隐私政策：在软件"关于"页面可查看多语言版本
 
+**版本说明**：
+- 稳定版：v0.0.1-beta（仅支持 HOI4，功能完整）
+- 开发版：v0.1.0-alpha（支持多游戏，编辑器重构中）
+
 如果您喜欢这个项目，请给一个 ⭐️ 支持我们！
 
-2026年5月26日<br>
-巴斯塔胡空间站
-
+**2026年5月26日**<br>
+**巴斯塔胡空间站·千月堂项目组**
 ---
-[软件更新日志](./doc/Log.md) · [插件开发指南](./doc/Plugin%20Development%20Guide/插件开发指南.md) · [多游戏支持说明](./doc/Multi-Game-Support.md)
+[软件更新日志](./doc/Log.md) · [插件开发指南](./doc/Plugin%20Development%20Guide/插件开发指南.md) · [多游戏支持说明](./doc/Multi-Game-Support.md) · [框架升级说明](./doc/Framework-Upgrade.md)
