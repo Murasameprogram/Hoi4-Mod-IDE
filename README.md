@@ -2,33 +2,32 @@
   <h1 align="center">
     <a><img src="https://github.com/Murasameprogram/Hoi4-Mod-IDE/blob/main/Picture/ico.png" width="250"></a>
     <br/>
-    <a>钢铁雄心4 Mod 集成开发环境</a>
+    <a>Paradox 游戏 MOD 集成开发环境</a>
   </h1>
 </div>
 
-[English](./Docs/English.md) | [中文](./README.md) | [繁体中文](./Docs/zh-TW.md)  
+[English](./Docs/English.md) | [中文](./README.md) | [繁体中文](./Docs/zh-TW.md")  
 ![.NET Version](https://img.shields.io/badge/框架-.NET%209.0-blue)
 ![UI](https://img.shields.io/badge/UI框架-WPFUI-blue)
-![IDE](https://img.shields.io/badge/开发工具-Visual%20Studio%202026-purple)
+![IDE](https://img.shields.io/badge/开发工具-Visual%20Studio%202022-purple)
 ![Platform](https://img.shields.io/badge/平台-Windows%2010%2F11%20x64-green)
 
-> **《钢铁雄心4》模组开发者的全能工具箱**  
-> 告别手动创建文件夹和编辑文本文件，通过图形化界面轻松管理、创建和编辑 HOI4 模组。从项目初始化到游戏机制配置，再到代码优化与插件扩展，一站式提升模组制作效率。
+> **Paradox 游戏模组开发者的全能工具箱**
+> 告别手动创建文件夹和编辑文本文件，通过图形化界面轻松管理、创建和编辑 Paradox 系列游戏的模组。从项目初始化到游戏机制配置，再到代码优化与插件扩展，一站式提升模组制作效率。支持 HOI4、EU4、CK3、VIC3、Stellaris 等 Paradox 游戏。
 
 ---
 
 ## 📋 项目状态
 
 **已发行版本：v0.0.1-beta**<br>
-**当前版本：v0.0.2-beta(未发行)**  
-本次更新带来了插件系统，大幅扩展了 IDE 的能力边界。
+**当前版本：v0.0.3-beta(未发行)**  
+本次更新带来了**多游戏支持**，从原先仅支持 HOI4 扩展为支持大部分 Paradox 游戏，包括 HOI4、EU4、CK3、VIC3、Stellaris 等。
 
 - ✅ 项目管理器（新建/导入/删除/持久化）
 - ✅ 新建 MOD 向导（自动生成标准目录结构）
 - ✅ 主窗口框架（导航、主题切换、托盘图标）
-- ✅ 多语言支持（内置 8 种语言）
-- ✅ 民族精神编辑器（完整功能：配置属性、条件、修饰符、本地化、获取方式）
 - ✅ 插件系统（提供完整开发文档，支持第三方扩展）
+- ✅ **多游戏支持**（支持 HOI4、EU4、CK3、VIC3、Stellaris 等 Paradox 游戏）
 - 🚧 代码编辑器（为熟练开发者提供直接代码编辑与语法修正）
 - 🚧 MOD 优化工具（扫描模组文件，找出冗余代码/文件）
 - 🚧 事件编辑器（规划中）
@@ -39,21 +38,35 @@
 
 ---
 
+## ⚠️ 重要提示
+
+由于软件已从**仅支持 HOI4** 扩展为**支持多款 Paradox 游戏**，原有的插件、教程等内容可能已失效。请注意：
+
+- 🔄 **插件兼容性**：为旧版 HOI4-Mod-IDE 开发的插件可能需要重新适配
+- 📚 **教程更新**：官方教程正在重新编写中，请及时关注更新
+- 🛠️ **API 变更**：插件开发接口可能有所调整，请参考最新的[插件开发指南](./doc/Plugin%20Development%20Guide/插件开发指南.md)
+
+---
+
 ## ✨ 核心特性
 
 ### 📁 项目管理器
 - 集中管理所有 MOD 项目，支持新建、导入、刷新、删除
 - 导入现有 `.mod` 文件，自动解析元数据（名称、作者、版本等）
-- 删除时可选“仅从列表移除”或“同时删除硬盘文件”
+- 删除时可选"仅从列表移除"或"同时删除硬盘文件"
 - 项目列表自动保存为 `projects.json`
+- **多游戏支持**：自动识别不同 Paradox 游戏的 MOD 文件格式
 
 ### 🆕 新建 MOD 向导
 - 可视化填写 MOD 信息（ID、名称、作者、版本、描述、游戏版本、标签）
-- 自动生成符合 HOI4 规范的目录结构：
+- **支持选择目标游戏**：HOI4、EU4、CK3、VIC3、Stellaris 等
+- 自动生成符合对应游戏规范的目录结构
 - 自动创建示例文件：国家标签、本地化、缩略图占位
 
 ### 🎨 可视化编辑器
-- **民族精神编辑器**：配置精神属性、生效条件、修饰符效果、本地化文本、获取方式（开局/国策/事件）
+- **游戏机制编辑器**：针对不同游戏提供专用的可视化编辑功能
+  - HOI4：民族精神编辑器（配置属性、条件、修饰符、本地化、获取方式）
+  - EU4/CK3/VIC3/Stellaris：对应游戏的专用编辑器（开发中）
 - **代码编辑器**：内嵌代码高亮与实时语法检查，支持直接编辑模组脚本，并提供一键修正常见错误的功能
 - **MOD 优化工具**：智能扫描模组文件，识别重复、未引用或废弃的代码块与文件，帮助精简模组体积，提升加载速度
 - *计划支持：事件编辑器、国策编辑器、决议编辑器、单位统计编辑器*
@@ -66,6 +79,7 @@
 - 插件携带两个通信库：
   - `HostComms.dll`：处理与主程序的底层通信
   - `PluginComms.dll`：封装插件间协作的高级 API（服务调用、直接消息、广播）
+- **多游戏支持**：插件可声明支持的游戏类型，主程序会自动过滤不适用的插件
 - 未来将支持**社区插件商店**，一键安装他人共享的插件
 
 ### 🖥️ 现代化工作区
@@ -73,6 +87,7 @@
 - 动态标题栏显示当前打开的 MOD 名称和 ID
 - 系统托盘图标，支持最小化到后台运行
 - 内置导航菜单，快速切换不同编辑器
+- **游戏切换器**：快速在不同游戏的 MOD 项目间切换
 
 ### 🌐 多语言支持
 - 内置语言服务，支持以下语言：
@@ -103,17 +118,19 @@
 
 ### 安装（使用预编译版本）
 
-1. 前往 [Releases 页面](https://github.com/Murasameprogram/Hoi4-Mod-IDE/releases) 下载最新版本的 `Hoi4-Mod-IDE.zip`。
-2. 解压到任意文件夹（例如 `C:\Program Files\Hoi4 Mod IDE`）。
-3. 运行 `Hearts of Iron IV Mod IDE.exe`。
+1. 前往 [Releases 页面](https://github.com/Murasameprogram/Hoi4-Mod-IDE/releases) 下载最新版本的 `Paradox-Mod-IDE.zip`。
+2. 解压到任意文件夹（例如 `C:\Program Files\Paradox Mod IDE`）。
+3. 运行 `Paradox Mod IDE.exe`。
 4. 首次启动将自动创建 `projects.json`，开始管理您的 MOD 项目。
 
 > **系统要求**：Windows 10/11（64位），已安装 [.NET 9.0 运行时](https://dotnet.microsoft.com/zh-cn/download/dotnet/9.0)（若未安装，程序启动时会提示下载）。
 
+> **支持的游戏**：HOI4、EU4、CK3、VIC3、Stellaris 等 Paradox Interactive 游戏。
+
 ### 从源码构建
 
 #### 开发环境要求
-- [Visual Studio 2022](https://visualstudio.microsoft.com/)（需包含“.NET 桌面开发”工作负载）
+- [Visual Studio 2022](https://visualstudio.microsoft.com/)（需包含".NET 桌面开发"工作负载）
 - [.NET 9.0 SDK](https://dotnet.microsoft.com/zh-cn/download/dotnet/9.0)
 - Git
 
@@ -130,25 +147,39 @@ dotnet restore
 dotnet build -c Release
 
 # 运行
-dotnet run --project "Hearts of Iron IV Mod IDE.csproj"
+dotnet run --project "Paradox Mod IDE.csproj"
 ```
-或者直接用 Visual Studio 打开解决方案文件 `Hearts of Iron IV Mod IDE.sln`，按 F5 启动调试。
+或者直接用 Visual Studio 打开解决方案文件 `Paradox Mod IDE.sln`，按 F5 启动调试。
 
 ## 使用指南
 
-- **创建新 MOD**：在项目管理器点击“新建 MOD”，填写表单，选择存储位置（推荐使用默认的 `文档/Paradox Interactive/Hearts of Iron IV/mod`），点击“创建”。
+- **选择目标游戏**：启动 IDE 后，首先在设置中选择您要开发的 MOD 对应的 Paradox 游戏（HOI4、EU4、CK3、VIC3、Stellaris 等）。
 
-- **导入现有 MOD**：点击“导入 MOD”，选择您的 `.mod` 文件，程序将自动识别并添加到列表。
+- **创建新 MOD**：在项目管理器点击"新建 MOD"，选择目标游戏，填写表单，选择存储位置（推荐使用默认路径，如 `文档/Paradox Interactive/[游戏名称]/mod`），点击"创建"。
 
-- **打开项目**：在项目列表中选中一个 MOD，点击“打开”，进入主工作区。
+- **导入现有 MOD**：点击"导入 MOD"，选择您的 `.mod` 文件，程序将自动识别游戏类型并添加到列表。
+
+- **打开项目**：在项目列表中选中一个 MOD，点击"打开"，进入主工作区。
 
 - **开始编辑**：使用左侧导航栏选择对应的编辑器（民族精神编辑器已完善；代码编辑器可直接修改脚本；优化工具可一键扫描冗余）。
 
 - **安装插件**：将插件 `.dll` 放入 `Plugins` 文件夹，重启 IDE 即可自动加载（插件开发请参考[插件开发指南](./doc/Plugin%20Development%20Guide/插件开发指南.md)）。
 
+### 🎮 各游戏专用功能
+
+| 游戏 | 支持的功能 |
+|:---|:---|
+| **HOI4** | 民族精神编辑器、事件编辑器（规划中）、国策编辑器（规划中） |
+| **EU4** | 事件编辑器（规划中）、决议编辑器（规划中） |
+| **CK3** | 事件编辑器（规划中）、决议编辑器（规划中） |
+| **VIC3** | 事件编辑器（规划中）、经济编辑器（规划中） |
+| **Stellaris** | 事件编辑器（规划中）、物种编辑器（规划中） |
+
+> **注意**：部分功能仍在开发中，具体支持情况请参考[项目状态](#-项目状态)。
+
 ## 🛠️ 技术栈
 
-- **框架**：.NET 9.0 / WPF
+- **框架**：.NET 10.0 / WPF
 - **UI 库**：Wpf.Ui（提供现代化控件、导航、主题、消息提示、托盘图标）
 - **MVVM 框架**：CommunityToolkit.Mvvm（ObservableObject、RelayCommand、源生成器）
 - **依赖注入**：Microsoft.Extensions.DependencyInjection
@@ -156,6 +187,7 @@ dotnet run --project "Hearts of Iron IV Mod IDE.csproj"
 - **本地化**：WPFLocalizationExtension + 嵌入式资源文件（.resx + .ini）
 - **JSON 处理**：System.Text.Json
 - **文件操作**：System.IO
+- **游戏支持**：通过插件化架构支持多款 Paradox 游戏（HOI4、EU4、CK3、VIC3、Stellaris 等）
 
 ## 🤝 贡献指南
 
@@ -189,7 +221,7 @@ dotnet run --project "Hearts of Iron IV Mod IDE.csproj"
 
 完整许可证文本请参阅 `LICENSE` 文件或访问 [GNU 通用公共许可证 V3.0](https://www.gnu.org/licenses/gpl-3.0.html)。
 
-钢铁雄心4 Mod IDE Copyright © 2025-2026 巴斯塔胡空间站<br>
+Paradox Mod IDE Copyright © 2025-2026 巴斯塔胡空间站<br>
 本程序是自由软件：您可以在遵守GNU GPL v3或更高版本的前提下再分发和/或修改它。
 本程序按"原样"提供，不附带任何担保。
 
@@ -205,9 +237,10 @@ dotnet run --project "Hearts of Iron IV Mod IDE.csproj"
 
 ## 🌟 致谢
 
-- 感谢所有《钢铁雄心4》模组社区的玩家和开发者提供的宝贵反馈
+- 感谢所有 Paradox 游戏模组社区的玩家和开发者提供的宝贵反馈
 - 感谢 Wpf.Ui 团队提供的现代化 UI 控件库，让项目界面更加美观
 - 感谢 Paradox Interactive 为我们带来如此出色的游戏，激发创作灵感
+- 感谢所有为项目提供翻译、测试和代码贡献的贡献者
 
 ## 📬 联系我们
 
@@ -215,12 +248,12 @@ dotnet run --project "Hearts of Iron IV Mod IDE.csproj"
 - 问题反馈：GitHub Issues
 - 教程与公告：B站 [@Bstarhs](https://space.bilibili.com/545733083)
 - QQ群：950718988（**仅可通过群号搜索**）
-- 用户协议 & 隐私政策：在软件“关于”页面可查看多语言版本
+- 用户协议 & 隐私政策：在软件"关于"页面可查看多语言版本
 
 如果您喜欢这个项目，请给一个 ⭐️ 支持我们！
 
-2026年3月6日<br>
+2026年5月26日<br>
 巴斯塔胡空间站
 
 ---
-[软件更新日志](./doc/Log.md) · [插件开发指南](./doc/Plugin%20Development%20Guide/插件开发指南.md)
+[软件更新日志](./doc/Log.md) · [插件开发指南](./doc/Plugin%20Development%20Guide/插件开发指南.md) · [多游戏支持说明](./doc/Multi-Game-Support.md)
